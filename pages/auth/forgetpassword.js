@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { AiOutlineEye } from "react-icons/Ai";
+import { AiOutlineEye } from "react-icons/ai";
 
-const Signin = () => {
+const Forgetpassword = () => {
   const {
     register,
     reset,
@@ -38,7 +38,11 @@ const Signin = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col px-5 py-5 lg:w-2/4"
         >
-          <h3 className="font-semibold mb-5">Sign in to Local New Business</h3>
+          <h3 className="font-semibold mb-5">Forgot Password?</h3>
+          <p className="text-xs mb-5">
+            No worriest! Just enter your email and we’ll send you a reset
+            password link.
+          </p>
           <div className="form-control w-full max-w-xs">
             <input
               type="email"
@@ -71,57 +75,17 @@ const Signin = () => {
             </label>
           </div>
 
-          <div className="form-control w-full max-w-xs relative">
-            <input
-              type="password"
-              placeholder="Password"
-              className="inputclass mt-5"
-              {...register("password", {
-                required: {
-                  value: true,
-                  message: "Password is required",
-                },
-                minLength: {
-                  value: 6,
-                  message: "Provide a valid Password", // JS only: <p>error message</p> TS only support string
-                },
-              })}
-            />
-            <AiOutlineEye className="mt-2 absolute right-5 top-5 cursor-pointer" />
-
-            <label className="label">
-              {errors.password?.type === "required" && (
-                <span className="label-text-alt text-red-500">
-                  {" "}
-                  {errors?.password?.message}
-                </span>
-              )}
-              {errors.password?.type === "minLength" && (
-                <span className="label-text-alt text-red-500">
-                  {" "}
-                  {errors.password.message}
-                </span>
-              )}
-            </label>
-          </div>
-
           <input
             type="submit"
             className="inputclass bg-[color:var(--form-button-color)] text-white cursor-pointer my-5"
-            value="Sign In"
+            value="Send Recovery Email"
           />
 
-          <Link href="/forgetpassword">
-            <span className="mx-auto text-[#3294D1] cursor-pointer">
-              Forget Password?
-            </span>
-          </Link>
-
           <p className="mx-auto">
-            New User?
-            <Link href="/registration">
+            Just Remember?
+            <Link href="/signin">
               <span className="text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer">
-                Create an Account
+                Sign In
               </span>
             </Link>
           </p>
@@ -131,4 +95,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Forgetpassword;

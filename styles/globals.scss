@@ -23,7 +23,6 @@ body {
   .menu-link{
     @apply cursor-pointer text-lg font-medium text-white
   }
-
 }
 
 :root{
@@ -32,23 +31,38 @@ body {
   
 }
 
-
-
-
-
 /* component custom style */
 .left-div{
-
   background-size: cover;
   background-image:linear-gradient(177.27deg, #FFFFFF -11.42%, rgba(255, 255, 255, 0.92) 16.59%, rgba(50, 148, 209, 0.93) 54.34%, #19263F 96.34%), url("/assets/bg.png");
   /* background: linear-gradient(177.27deg, #FFFFFF -11.42%, rgba(255, 255, 255, 0.92) 16.59%, rgba(50, 148, 209, 0.93) 54.34%, #19263F 96.34%),url("/assets/bg.png") ; */
 }
 
 .right-div{
-  
   background: linear-gradient(180deg, #5ea6d27e 0%, rgba(75, 118, 145, 0) 66.36%);
+  opacity: 0.9;
+}
 
-opacity: 0.9;
+.header6 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 143.69%;
+}
+.headline6{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 169%;
+}
+
+.headline4{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 
