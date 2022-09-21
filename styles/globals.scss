@@ -21,12 +21,30 @@ body {
     @apply w-full max-w-xs rounded-lg px-2 py-1 focus:outline-none border-[1px] 
   }
   .menu-link{
-    @apply cursor-pointer text-lg font-medium text-white
+    @apply cursor-pointer text-lg px-3 py-3 font-medium mx-5 text-black 
+  }
+  .link-hover{
+    @apply hover:bg-[color:var(--primary1-color)] hover:px-3 hover:py-3 rounded-[5px] hover:text-white
+  }
+  .navbar{
+    @apply flex justify-between items-center py-5 px-20 bg-blue-100
   }
 }
 
 :root{
   --form-button-color:#D16F32;
+  --primary1-button-color:#D16F32;
+  --primary2-button-color:#3294D1;
+  --primary1-color:#D16F32;
+  --primary2-color:#3294D1;
+  --primary3-color:#A8C6DF;
+  --Black-one:#202020;
+  --Black-two:#19263F;
+  --Black-three:#47464A;
+  --Grey:#84818A;
+  --Teal:#FD5C5C;
+  --White:#FFFFFF;
+  --header-color:rgba(255, 255, 255, 0.87);
   --input-class : input input-bordered w-full max-w-xs rounded-lg px-2 py-1 border-[1px];
   
 }
@@ -43,11 +61,50 @@ body {
   opacity: 0.9;
 }
 
+
+.footer{
+  background: linear-gradient(180deg, rgba(50, 148, 209, 0) 0%, rgba(50, 148, 209, 0.31) 100%);;
+}
+
 .header6 {
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
   line-height: 143.69%;
+}
+
+.headlinesemibold{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 139.8%;
+
+}
+
+.headline9{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px
+}
+
+.headline8{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.headline7{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
 }
 .headline6{
   font-family: 'Barlow';
@@ -57,12 +114,44 @@ body {
   line-height: 169%;
 }
 
+.headline5{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .headline4{
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+}
+
+.headline3{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 147%;
+}
+
+.headline2{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 143.69%;
+}
+
+.headline1{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 143.69%;
 }
 
 

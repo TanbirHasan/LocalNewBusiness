@@ -1,26 +1,31 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="py-5 bg-indigo-500 ...">
+    <div className="navbar">
+      <div className="logo">
+        <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+      </div>
       <nav>
-        <ul className="flex justify-evenly">
+        <ul className="flex md:flex sm:hidden">
           <Link href="/">
-            <li className="menu-link">Home</li>
+            <li className="headline7 menu-link link-hover">Start Search</li>
           </Link>
+
           <Link href="/about">
-            <li className="menu-link">About</li>
+            <li className="headline7 menu-link link-hover">About</li>
           </Link>
           <Link href="/registration">
-            <li className="menu-link">Registration</li>
+            <li className="headline7 menu-link link-hover">Contact</li>
           </Link>
-          <Link href="/signin">
-            <li className="menu-link">SignIn</li>
+          <Link href="/auth/signin">
+            <li className="headline7 menu-link link-hover">Login</li>
           </Link>
-          <Link href="/newpassword">
+          {/* <Link href="/newpassword">
             <li className="menu-link">New password</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </div>
