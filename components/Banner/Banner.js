@@ -13,7 +13,7 @@ const Banner = () => {
     reset();
   };
   return (
-    <div className="banner h-screen px-20 py-20">
+    <div className="banner h-screen md:px-20 py-20 sm:px-10">
       <div className="text-center mb-10">
         <h2 className="headline2 text-white mb-10">
           We help you connect with new local businesses before the competition.
@@ -40,7 +40,7 @@ const Banner = () => {
             <input
               type="text"
               placeholder="Postcode"
-              className="w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0"
+              className="w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0 xl:w-full lg:w-2/3 md:w-2/3 sm:w-2/3"
               {...register("postcode", {
                 required: {
                   value: true,
@@ -73,7 +73,7 @@ const Banner = () => {
             <input
               type="text"
               placeholder="SIC Code"
-              className="w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0"
+              className="w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0 xl:w-full lg:w-2/3 md:w-2/3 sm:w-2/3"
               {...register("sic", {
                 required: {
                   value: true,
@@ -106,7 +106,7 @@ const Banner = () => {
             </label>
             <input
               type="submit"
-              className="w-full py-5 rounded-lg headline6 my-5 text-center bg-[color:var(--primary1-color)] text-white cursor-pointer"
+              className="w-full py-5 rounded-lg headline6 my-5 text-center bg-[color:var(--primary1-color)] text-white cursor-pointer xl:w-full lg:w-2/3 md:w-2/3 sm:w-2/3"
               value="Search"
             />
           </div>

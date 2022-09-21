@@ -5,6 +5,9 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+
+
+
 /* font family */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&display=swap');
 
@@ -15,6 +18,9 @@ body {
 @tailwind utilities;
 
 
+
+
+// Random class name 
 
 @layer components {
   .inputclass {
@@ -75,14 +81,14 @@ body {
   
 }
 
-
+/* component custom style */
 .banner{
   background-image: linear-gradient(180deg, rgba(25, 38, 63, 0.87) -43.82%, #3294D1 100%), url("/assets/Rectangle.png");
   opacity: 0.97;
   background-size: cover;
 }
 
-/* component custom style */
+
 .left-div{
   background-size: cover;
   background-image:linear-gradient(177.27deg, #FFFFFF -11.42%, rgba(255, 255, 255, 0.92) 16.59%, rgba(50, 148, 209, 0.93) 54.34%, #19263F 96.34%), url("/assets/bg.png");
@@ -92,6 +98,13 @@ body {
 .right-div{
   background: linear-gradient(180deg, #5ea6d27e 0%, rgba(75, 118, 145, 0) 66.36%);
   opacity: 0.9;
+}
+
+
+.card{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 
