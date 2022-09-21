@@ -18,7 +18,7 @@ body {
 
 @layer components {
   .inputclass {
-    @apply w-full max-w-xs rounded-lg px-2 py-1 focus:outline-none border-[1px] 
+    @apply w-full max-w-xs rounded-lg px-2 py-1 focus:outline-none border-[1px] border-none
   }
   .menu-link{
     @apply cursor-pointer text-lg px-3 py-3 font-medium mx-5 text-black 
@@ -29,6 +29,32 @@ body {
   .navbar{
     @apply flex justify-between items-center py-5 px-20 bg-blue-100
   }
+
+  .authform{
+    @apply grid grid-cols-1 sm:grid-cols-6 h-screen
+  }
+  .leftdiv{
+    @apply left-div md:col-span-2 hidden md:block
+  }
+  .leftdivinner{
+    @apply flex flex-col items-start justify-between h-full
+  }
+  .rightdiv{
+    @apply right-div bg-yellow-200 col-span-4
+  }
+  .formclass{
+    @apply flex flex-col px-5 py-5 justify-center items-center h-screen
+  }
+  .formbutton{
+    @apply inputclass headline6 bg-[color:var(--form-button-color)] text-white cursor-pointer my-5 border-none
+  }
+  .formbottomlink{
+    @apply text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer
+  }
+
+
+ 
+  
 }
 
 :root{
@@ -47,6 +73,13 @@ body {
   --header-color:rgba(255, 255, 255, 0.87);
   --input-class : input input-bordered w-full max-w-xs rounded-lg px-2 py-1 border-[1px];
   
+}
+
+
+.banner{
+  background-image: linear-gradient(180deg, rgba(25, 38, 63, 0.87) -43.82%, #3294D1 100%), url("/assets/Rectangle.png");
+  opacity: 0.97;
+  background-size: cover;
 }
 
 /* component custom style */

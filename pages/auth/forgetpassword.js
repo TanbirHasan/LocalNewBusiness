@@ -16,30 +16,28 @@ const Forgetpassword = () => {
     reset();
   };
   return (
-    <div className="flex justify-center my-20 h-screen lg:flex-row md:flex-row sm:flex flex-col px-2">
-      <div className="left-div xl:w-1/4 lg:w-1/4 md:w-1/4 xl:px-12 py-10 md:px-5 sm:w-full px-5">
-        <div className="flex flex-col items-start justify-between h-full">
-          <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+    <div className="authform">
+      <div className="leftdiv">
+        <div className="leftdivinner">
+          <div className="p-16">
+            <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          </div>
           <div>
-            <h3 className="font-bold text-xl text-white">
-              Do you want to grow your business?
-            </h3>
-            <h3 className="font-bold text-xl text-white mb-5">Join us now.</h3>
-
-            <p className="text-[11px] text-white">
+            <div className="headline2 text-white px-16">
+              Do you want to grow <br /> your business? <br />
+              Join us now.
+            </div>
+            <div className="headline6 text-white px-16 my-20">
               Creating Brands, Growing business’s and crafting unique
               experiences for customers all around the world.
-            </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="right-div xl:w-2/4 lg:w-2/4 md:w-2/4 bg-yellow-200 flex justify-center items-center z-0 sm:w-full">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col px-5 py-5 lg:w-2/4"
-        >
-          <h3 className="font-semibold mb-5">Forgot Password?</h3>
-          <p className="text-xs mb-5">
+      <div className="rightdiv">
+        <form onSubmit={handleSubmit(onSubmit)} className="formclass">
+          <h3 className="font-semibold mb-5 headline4">Forgot Password?</h3>
+          <p className="headline8 mb-5">
             No worriest! Just enter your email and we’ll send you a reset
             password link.
           </p>
@@ -47,7 +45,7 @@ const Forgetpassword = () => {
             <input
               type="email"
               placeholder="Email"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("email", {
                 required: {
                   value: true,
@@ -77,16 +75,14 @@ const Forgetpassword = () => {
 
           <input
             type="submit"
-            className="inputclass bg-[color:var(--form-button-color)] text-white cursor-pointer my-5"
+            className="formbutton"
             value="Send Recovery Email"
           />
 
-          <p className="mx-auto">
+          <p className="mx-auto headline8">
             Just Remember?
-            <Link href="/signin">
-              <span className="text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer">
-                Sign In
-              </span>
+            <Link href="/auth/signin">
+              <span className="formbottomlink">Sign In</span>
             </Link>
           </p>
         </form>

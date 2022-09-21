@@ -19,34 +19,34 @@ const Reigistration = () => {
     reset();
   };
   return (
-    <div className="flex justify-center my-20 h-screen lg:flex-row md:flex-row sm:flex flex-col px-2">
-      <div className="left-div xl:w-1/4 lg:w-1/4 md:w-1/4 xl:px-12 py-10 md:px-5 sm:w-full px-5">
-        <div className="flex flex-col items-start justify-between h-full">
-          <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+    <div className="authform">
+      <div className="leftdiv">
+        <div className="leftdivinner">
+          <div className="p-16">
+            <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          </div>
           <div>
-            <h3 className="font-bold text-xl text-white">
-              Do you want to grow your business?
-            </h3>
-            <h3 className="font-bold text-xl text-white mb-5">Join us now.</h3>
-
-            <p className="text-[11px] text-white">
+            <div className="headline2 text-white px-16">
+              Do you want to grow <br /> your business? <br />
+              Join us now.
+            </div>
+            <div className="headline6 text-white px-16 my-20">
               Creating Brands, Growing business’s and crafting unique
               experiences for customers all around the world.
-            </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="right-div xl:w-2/4 lg:w-2/4 md:w-2/4 flex justify-center items-center z-0 sm:w-full">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col px-5 py-5 relative"
-        >
-          <h3 className="font-semibold mb-5">Register to Local New Business</h3>
+      <div className="rightdiv">
+        <form onSubmit={handleSubmit(onSubmit)} className="formclass">
+          <h3 className="font-semibold mb-5 headline4">
+            Register to Local New Business
+          </h3>
           <div className="form-control w-full max-w-xs">
             <input
               type="email"
               placeholder="Email"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("email", {
                 required: {
                   value: true,
@@ -79,7 +79,7 @@ const Reigistration = () => {
               <input
                 type="text"
                 placeholder="First-Name"
-                className="inputclass mr-1"
+                className="inputclass mr-1 headline8"
                 {...register("firstname", {
                   required: {
                     value: true,
@@ -90,7 +90,7 @@ const Reigistration = () => {
               <input
                 type="text"
                 placeholder="Last-Name"
-                className="inputclass ml-1"
+                className="inputclass ml-1 headline8"
                 {...register("lastname", {
                   required: {
                     value: true,
@@ -104,7 +104,7 @@ const Reigistration = () => {
             <input
               type="text"
               placeholder="Company name"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("compnayname", {
                 required: {
                   value: true,
@@ -126,7 +126,7 @@ const Reigistration = () => {
             <input
               type="text"
               placeholder="Phone number"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("phonenumber", {
                 required: {
                   value: true,
@@ -148,7 +148,7 @@ const Reigistration = () => {
             <input
               type="text"
               placeholder="Post code"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("postcode", {
                 required: {
                   value: true,
@@ -170,7 +170,7 @@ const Reigistration = () => {
             <input
               type="password"
               placeholder="Password"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("password", {
                 required: {
                   value: true,
@@ -200,17 +200,13 @@ const Reigistration = () => {
             </label>
           </div>
 
-          <input
-            type="submit"
-            className="inputclass bg-[color:var(--form-button-color)] text-white cursor-pointer mt-5 mb-5"
-            value="Create Account"
-          />
+          <input type="submit" className="formbutton" value="Create Account" />
           <div className="form-control w-full max-w-xs relative mb-5">
             <input
               type="checkbox"
               className="appearance checked:bg-blue-500 mr-3"
             />
-            <span className="text-xs">
+            <span className="headline9">
               By clicking Create account, I agree that I have read and accepted
               the Terms of Use and Privacy Policy.
             </span>
@@ -221,12 +217,10 @@ const Reigistration = () => {
       </Link>
               */}
 
-          <p className="mx-auto text-[15px]">
+          <p className="mx-auto headline8">
             Already have an account?
-            <Link href="/signin">
-              <span className="text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer">
-                Sing in
-              </span>
+            <Link href="/auth/signin">
+              <span className="formbottomlink">Sing in</span>
             </Link>
           </p>
         </form>

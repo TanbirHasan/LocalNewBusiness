@@ -16,14 +16,14 @@ const Signin = () => {
     reset();
   };
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-6 h-screen">
-      <div className="left-div md:col-span-2 hidden md:block">
-        <div className="flex flex-col items-start justify-between h-full">
+    <div className="authform">
+      <div className="leftdiv">
+        <div className="leftdivinner">
           <div className="p-16">
             <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
           </div>
           <div>
-            <div className="header6 text-white px-16">
+            <div className="headline2 text-white px-16">
               Do you want to grow <br /> your business? <br />
               Join us now.
             </div>
@@ -34,17 +34,14 @@ const Signin = () => {
           </div>
         </div>
       </div>
-      <div className="right-div bg-yellow-200 col-span-4">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col px-5 py-5 justify-center items-center h-screen"
-        >
+      <div className="rightdiv">
+        <form onSubmit={handleSubmit(onSubmit)} className="formclass">
           <h3 className="headline4 mb-5">Sign in to Local New Business</h3>
           <div className="form-control w-full max-w-xs">
             <input
               type="email"
               placeholder="Email"
-              className="inputclass"
+              className="inputclass headline8"
               {...register("email", {
                 required: {
                   value: true,
@@ -76,7 +73,7 @@ const Signin = () => {
             <input
               type="password"
               placeholder="Password"
-              className="inputclass mt-5"
+              className="inputclass mt-5 headline8"
               {...register("password", {
                 required: {
                   value: true,
@@ -106,24 +103,18 @@ const Signin = () => {
             </label>
           </div>
 
-          <input
-            type="submit"
-            className="inputclass bg-[color:var(--form-button-color)] text-white cursor-pointer my-5"
-            value="Sign In"
-          />
+          <input type="submit" className="formbutton" value="Sign In" />
 
-          <Link href="/forgetpassword">
-            <span className="mx-auto text-[#3294D1] cursor-pointer">
+          <Link href="/auth/forgetpassword">
+            <span className="headline8 mx-auto text-[#3294D1] cursor-pointer mb-5">
               Forget Password?
             </span>
           </Link>
 
-          <p className="mx-auto">
+          <p className="headline8 mx-auto">
             New User?
-            <Link href="/registration">
-              <span className="text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer">
-                Create an Account
-              </span>
+            <Link href="/auth/registration">
+              <span className="formbottomlink">Create an Account</span>
             </Link>
           </p>
         </form>
