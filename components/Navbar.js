@@ -8,8 +8,8 @@ const Navbar = () => {
       <div className="logo">
         <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
       </div>
-      <nav>
-        <ul className="flex md:flex sm:hidden">
+      <nav className="nav-link ">
+        <ul className="flex lg:flex md:flex sm:hidden">
           <Link href="/">
             <li className="headline7 menu-link link-hover">Start Search</li>
           </Link>

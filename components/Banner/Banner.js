@@ -13,19 +13,18 @@ const Banner = () => {
     reset();
   };
   return (
-    <div className="banner h-screen md:px-20 py-20 sm:px-10">
+    <div className="banner lg:h-screen lg:px-20 py-20 sm:px-10 h-auto">
       <div className="text-center mb-10">
-        <h2 className="headline2 text-white mb-10">
+        <h2 className="headline2 xl:text-[40px] lg:text-[40px] text-white mb-10 sm:text-[34px]">
           We help you connect with new local businesses before the competition.
         </h2>
-        <p className="headline5 text-white">
+        <p className="headline5 text-white sm:text-[16px]">
           We help you reach their inboxes, so you can make connections that turn
-          into sales.
-          <br />
-          We also offer templates that help you stand out from the crowd.
+          into sales. We also offer templates that help you stand out from the
+          crowd.
         </p>
       </div>
-      <div className="flex justify-evenly text-white mb-10">
+      <div className="feature flex justify-evenly text-white mb-10 ">
         <span className="headline7">Update Every Second</span>
         <span className="headline7">30 Days Free Trial</span>
         <span className="headline7">Unlimited Data</span>
@@ -33,7 +32,7 @@ const Banner = () => {
       <div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mb-20 flex justify-evenly text-center"
+          className="form mb-20 flex justify-evenly lg:flex-row text-center sm:flex flex-col items-center"
         >
           <div className="form-control w-full max-w-xs">
             <label className="headline6 text-white">Search By Postcode</label>

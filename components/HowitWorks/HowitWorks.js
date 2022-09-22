@@ -4,8 +4,10 @@ const HowitWorks = () => {
   return (
     <div className="px-20 mt-10 Howitworks py-20 text-white">
       <div>
-        <h2 className="headline1 text-center mb-5">How It Works</h2>
-        <p className="headline8 text-center mb-10">
+        <h2 className="headline1 lg:text-[52px] text-center mb-5 sm:text-[24px]">
+          How It Works
+        </h2>
+        <p className="headline8 text-center mb-10 sm:hidden">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>
       </div>

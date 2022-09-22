@@ -135,6 +135,16 @@ body {
 
 }
 
+
+
+.Tagline{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 147%;
+}
+
 .headline9{
   font-family: 'Barlow';
   font-style: normal;
@@ -208,3 +218,16 @@ body {
 }
 
 
+
+
+
+
+@media (max-width: 576px){
+  .nav-link{
+    display: none;
+  }
+
+ 
+
+
+}

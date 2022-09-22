@@ -3,7 +3,7 @@ import Carousel from "react-grid-carousel";
 
 const DashboardSlider = () => {
   return (
-    <div className="px-[200px]">
+    <div className=";g:px-[200px] sm:px-[20px] sm:mx-auto">
       <Carousel cols={1} rows={1} gap={10} loop>
         <Carousel.Item>
           <div className="flex justify-center items-center">

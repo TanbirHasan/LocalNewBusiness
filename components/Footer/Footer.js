@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer class="footer text-gray-600 body-font  bottom-0 w-full">
       <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div class="xl:w-64 lg:w-64 md:w-64 flex-shrink-0 md:mx-0 md:text-left sm:mx-0 sm:w-full">
+          <a class="flex title-font font-medium xl:items-center md:justify-start justify-center text-gray-900 sm:justify-start">
             <Image
               className="ml-3 text-xl"
               src="/assets/logo.png"
@@ -21,8 +21,8 @@ const Footer = () => {
             Start Data.
           </p>
         </div>
-        <div class="w-full flex justify-between md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <div class="w-full flex justify-between md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left sm:pl-0">
+          <div class="lg:w-1/4 md:w-1/2 w-full xl:px-4 lg:px-4">
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               Company
             </h2>

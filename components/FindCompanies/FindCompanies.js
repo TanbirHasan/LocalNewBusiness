@@ -3,14 +3,14 @@ import Image from "next/image";
 const FindCompanies = () => {
   return (
     <div className="py-20">
-      <div className="flex justify-between pl-20">
+      <div className="lg:pl-20 flex justify-between ">
         <div>
-          <h2 className="headline2">
-            Find the names and addresses of newly formed
-            <br /> companies in your area or industry.
+          <h2 className="w-[80%] lg:text-[40px]  sm:text-[24px] ">
+            Find the names and addresses of newly formed companies in your area
+            or industry.
           </h2>
         </div>
-        <div>
+        <div className="lg:block sm:hidden">
           <Image
             src="/assets/LocationLogo.png"
             width="74"
@@ -20,8 +20,8 @@ const FindCompanies = () => {
         </div>
       </div>
 
-      <div className="flex justify-between px-20 mt-20">
-        <div className="card px-10 py-10 mr-5 rounded-[10px]">
+      <div className="flex xl:flex-row lg:flex-row justify-between lg:px-20 mt-20 sm:flex flex-col sm:px-10">
+        <div className="card px-10 py-10 lg:mr-5 lg:mb-0 rounded-[10px] sm:mb-10">
           <Image
             src="/assets/Smiley.png"
             width="24"
@@ -35,7 +35,7 @@ const FindCompanies = () => {
             director names, of new UK companies of interest to you.
           </p>
         </div>
-        <div className="card px-10 py-10 ml-5 rounded-[10px]">
+        <div className="card px-10 py-10 lg:ml-5 rounded-[10px]">
           <Image
             src="/assets/LocationMarker.png"
             width="24"
@@ -51,7 +51,7 @@ const FindCompanies = () => {
         </div>
       </div>
 
-      <div className="px-20 mt-20">
+      <div className="lg:px-20 mt-20 sm:px-10">
         <div className="card px-10 py-10 rounded-[10px]">
           <Image
             src="/assets/File.png"
