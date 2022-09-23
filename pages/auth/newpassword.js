@@ -19,7 +19,10 @@ const Newpassword = () => {
     <div className="flex justify-center my-20 h-screen lg:flex-row md:flex-row sm:flex flex-col px-2">
       <div className="left-div xl:w-1/4 lg:w-1/4 md:w-1/4 xl:px-12 py-10 md:px-5 sm:w-full px-5">
         <div className="flex flex-col items-start justify-between h-full">
-          <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          <Link href="/home">
+            <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          </Link>
+
           <div>
             <h3 className="font-bold text-xl text-white">
               Do you want to grow your business?

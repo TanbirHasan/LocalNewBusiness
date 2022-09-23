@@ -11,6 +11,10 @@ const AboutUs = () => {
         Be the first to access new companies contact
         <br /> details with new start data.
       </h2>
+      <p className="headline6">
+        Be the first to access new companies contact details with New Start
+        Data.
+      </p>
     </div>
   );
 };

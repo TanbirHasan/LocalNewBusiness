@@ -9,15 +9,23 @@ import Footer from "../components/Footer/Footer";
 import HowitWorks from "../components/HowitWorks/HowitWorks";
 import Navbar from "../components/Navbar";
 import PrintandPost from "../components/PrintandPost/PrintandPost";
-import About from "./About";
-import Home from "./home";
 
-const index = () => {
+const Home = () => {
   return (
     <>
-      <Home />
+      <Navbar />
+      <Banner />
+      <FindCompanies />
+      <PrintandPost />
+      <DashboardSlider />
+      <HowitWorks />
+      <AboutUs />
+      <AboutUsSecond />
+      <Conversation />
+
+      <Footer />
     </>
   );
 };
 
-export default index;
+export default Home;

@@ -113,6 +113,42 @@ body {
   background-position: cover;
   
 }
+.about{
+  background: linear-gradient(180deg, #d16f324a 0%, rgba(209, 111, 50, 0) 66.36%);
+  opacity: 0.68;
+}
+
+.contact{
+  background: linear-gradient(180deg, #d16f324a 0%, rgba(209, 111, 50, 0) 66.36%);
+  opacity: 0.68;
+}
+
+
+.contactinput{
+  background: #FEFFFF;
+  border: 1px solid rgba(132, 129, 138, 0.4);
+  box-shadow: 5px 4px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 7.79221px;
+}
+
+
+.vision{
+  background: #d16f3230;
+  opacity: 0.9;
+}
+
+.mission{
+  background: #3294d135;
+opacity: 0.9;
+}
+
+.values{
+  background: #1c992834;
+opacity: 0.9;
+}
+
+
+
 
 
 .footer{
@@ -217,7 +253,20 @@ body {
   line-height: 143.69%;
 }
 
+.reserveHeadlintext{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 179%;
+  /* or 86px */
 
+  text-transform: uppercase;
+
+  color: #202020;
+
+  opacity: 0.1;
+}
 
 
 

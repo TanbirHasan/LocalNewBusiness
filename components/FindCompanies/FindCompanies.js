@@ -3,7 +3,7 @@ import Image from "next/image";
 const FindCompanies = () => {
   return (
     <div className="py-20">
-      <div className="lg:pl-20 flex justify-between ">
+      <div className="lg:pl-20 flex justify-between sm:pl-10">
         <div>
           <h2 className="w-[80%] lg:text-[40px]  sm:text-[24px] ">
             Find the names and addresses of newly formed companies in your area

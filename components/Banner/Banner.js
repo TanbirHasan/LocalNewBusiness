@@ -15,10 +15,10 @@ const Banner = () => {
   return (
     <div className="banner lg:h-screen lg:px-20 py-20 sm:px-10 h-auto">
       <div className="text-center mb-10">
-        <h2 className="headline2 xl:text-[40px] lg:text-[40px] text-white mb-10 sm:text-[34px]">
+        <h2 className="headline2 xl:text-[40px] lg:text-[40px] text-white mb-10 sm:text-[34px] xl:w-[890px] lg:w-[890px] mx-auto sm:w-[452px]">
           We help you connect with new local businesses before the competition.
         </h2>
-        <p className="headline5 text-white sm:text-[16px]">
+        <p className="headline5 text-white sm:text-[16px] lg:w-[712px] mx-auto sm:w-[396px]">
           We help you reach their inboxes, so you can make connections that turn
           into sales. We also offer templates that help you stand out from the
           crowd.

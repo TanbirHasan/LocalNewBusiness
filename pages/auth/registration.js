@@ -22,8 +22,15 @@ const Reigistration = () => {
     <div className="authform">
       <div className="leftdiv">
         <div className="leftdivinner">
-          <div className="p-16">
-            <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          <div className="p-16 cursor-pointer">
+            <Link href="/home">
+              <Image
+                src="/assets/logo.png"
+                width="120"
+                height="50"
+                alt="logo"
+              />
+            </Link>
           </div>
           <div>
             <div className="headline2 text-white px-16">
