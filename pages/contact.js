@@ -160,7 +160,11 @@ const contact = () => {
                       message: "Provide a valid Subject", // JS only: <p>error message</p> TS only support string
                     },
                   })}
-                />
+                >
+                  <option>Science</option>
+                  <option>CSE</option>
+                  <option>EEE</option>
+                </select>
               </div>
               <label className="label ml-5">
                 {errors.subject?.type === "required" && (

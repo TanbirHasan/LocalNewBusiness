@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <nav className="nav-link ">
         <ul className="flex lg:flex md:flex sm:hidden">
-          <Link href="/">
+          <Link href="/homr">
             <li className="headline7 menu-link link-hover">Start Search</li>
           </Link>
 

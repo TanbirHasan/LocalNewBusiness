@@ -11,12 +11,12 @@ const About = () => {
     <div>
       <div className="about">
         <Navbar />
-        <div className="text-center z-10 pt-[100px]">
+        <div className="text-center z-10 pt-[100px] px-10">
           {" "}
-          <h3 className="Tagline mb-5 lg:text-[20px] text-[#D16F32]">
+          <h3 className="Tagline mb-5  lg:text-[20px] text-[#D16F32]">
             ABOUT US
           </h3>
-          <h2 className="headline3 lg:text-[36px] sm:text-[22px]">
+          <h2 className="headline3 text-[16px] xl:text-[36px]  lg:text-[36px] md:text-[36px] sm:text-[22px]">
             Be the first to access new companies contact
             <br /> details with new start data.
           </h2>
@@ -32,8 +32,8 @@ const About = () => {
       <Responsibilities />
       <Goal />
 
-      <div className="py-20 px-20 text-center">
-        <h3 className="headline3 mb-5">
+      <div className="py-20 px-10 text-center xl:px-20  lg:px-20  md:px-20  ">
+        <h3 className="headline3 text-[24px] mb-5 lg:text-[36px]  xl:text-[36px]  md:text-[36px] ">
           Be the first to access new companies contact.
         </h3>
         <p className="headline6">

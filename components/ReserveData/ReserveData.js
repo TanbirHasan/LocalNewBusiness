@@ -2,11 +2,13 @@ import Image from "next/image";
 
 const ReserveData = () => {
   return (
-    <div className="flex justify-evenly items-center my-20">
-      <div className="w-1/4">
-        <h2 className="reserveHeadlintext">WE RESERVE MILLION DATA</h2>
+    <div className="flex flex-col justify-evenly items-center my-20 xl:flex-row lg:flex-row">
+      <div className="w-full xl:w-1/4 lg:w-1/4 md:w-1/4">
+        <h2 className="reserveHeadlintext text-[24px] text-center xl:text-[48px] lg:text-[48px] sm:text-[48px]">
+          WE RESERVE MILLION DATA
+        </h2>
       </div>
-      <div className="w-1/4">
+      <div className="w-full xl:w-1/4 lg:w-1/4 md:w-1/4">
         <Image
           src="/assets/GlobalMap.png"
           width="423"
@@ -14,7 +16,7 @@ const ReserveData = () => {
           alt="globalmap"
         />
       </div>
-      <div className="w-1/4 flex flex-col items-start">
+      <div className="flex flex-col mt-10 items-center w-full xl:w-1/4 lg:w-1/4 md:w-1/4 xl:items-start lg:items-start">
         <Image
           src="/assets/Discover.png"
           width="160"
@@ -57,7 +59,7 @@ const ReserveData = () => {
             />
           </span>
         </div>
-        <p>
+        <p className="text-center lg:text-start">
           Be the first to access new companies contact details with New Start
           Data. Be the first to access new companies.
         </p>
