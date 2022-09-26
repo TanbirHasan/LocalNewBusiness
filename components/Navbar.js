@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <nav className="nav-link ">
         <ul className="flex lg:flex md:flex sm:hidden">
-          <Link href="/homr">
+          <Link href="/home">
             <li className="headline7 menu-link link-hover">Start Search</li>
           </Link>
 

@@ -182,13 +182,6 @@ opacity: 0.9;
   line-height: 147%;
 }
 
-.headline9{
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  // font-size: 12px;
-  line-height: 17px
-}
 
 .headline8{
   font-family: 'Barlow';
@@ -206,13 +199,7 @@ opacity: 0.9;
   line-height: 19px;
 
 }
-.headline6{
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  // font-size: 18px;
-  line-height: 169%;
-}
+
 
 .headline5{
   font-family: 'Barlow';
@@ -222,13 +209,7 @@ opacity: 0.9;
   line-height: 32px;
 }
 
-.headline4{
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 500;
-  // font-size: 24px;
-  line-height: 32px;
-}
+
 
 .headline3{
   font-family: 'Barlow';
@@ -271,13 +252,40 @@ opacity: 0.9;
 
 
 
-
-@media (max-width: 576px){
-  .nav-link{
-    display: none;
+.header6 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 143.69%;
+  @media screen and (max-width: 1450px) {
+    font-size: 35px;
   }
+  @media screen and (max-width: 1305px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 25px;
+  }
+}
+.headline6{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 169%;
+}
+.headline8{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
 
- 
-
-
+.headline4{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }

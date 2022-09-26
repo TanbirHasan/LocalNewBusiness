@@ -33,7 +33,7 @@ const ForgotPassword = () => {
       >
         <h3 className="headline4 mb-7 text-left">Forgot password?</h3>
         <div className="headline8 text-left mb-14 w-full md:w-96">
-          No worriest! Just enter your email and we’ll send you a reset password
+          No worries! Just enter your email and we’ll send you a reset password
           link.
         </div>
         <div className=" flex flex-col gap-7 items-center justify-between w-full md:w-96">

@@ -20,7 +20,7 @@ const FindCompanies = () => {
         </div>
       </div>
 
-      <div className="flex px-10 xl:flex-row lg:flex-row justify-between lg:px-20 mt-20 sm:flex flex-col sm:px-10">
+      <div className="px-10 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 mt-5 lg:px-20 md:px-20">
         <div className="card mb-10 px-10 py-10 lg:mr-5 lg:mb-0 rounded-[10px] lg:mb-0 md:mb-0">
           <Image
             src="/assets/Smiley.png"
