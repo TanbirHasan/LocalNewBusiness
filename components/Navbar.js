@@ -5,9 +5,12 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="logo">
-        <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
-      </div>
+      <Link href="/home">
+        <div className="logo cursor-pointer">
+          <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+        </div>
+      </Link>
+
       <nav className="nav-link ">
         <ul className="flex lg:flex md:flex sm:hidden">
           <Link href="/homr">

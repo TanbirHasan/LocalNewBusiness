@@ -4,14 +4,14 @@ const HowitWorks = () => {
   return (
     <div className="px-20 mt-10 Howitworks py-20 text-white">
       <div>
-        <h2 className="headline1 lg:text-[52px] text-center mb-5 sm:text-[24px]">
+        <h2 className="headline1 text-[24px] lg:text-[52px] md:text-[52px] text-center mb-5">
           How It Works
         </h2>
-        <p className="headline8 text-center mb-10 sm:hidden">
+        <p className="hidden headline8 text-center mb-10 lg:block md:block">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center flex-wrap lg:no-wrap md:no-wrap">
         <div className="px-5">
           <Image src="/assets/Gps.png" width="24" height="24" alt="" />
           <h3 className="headline4">Enter Postcode</h3>

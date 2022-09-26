@@ -8,7 +8,7 @@ const PrintandPost = () => {
         <h2 className="headline3 lg:text-[40px] mb-5 sm:text-[20px]">
           Lorem ipsum dolor sit amet.
         </h2>
-        <p className="headline6 lg:text-[18px] sm:text-[12px]">
+        <p className="headline6 text-[12px] lg:text-[18px] md:text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique
           odio nam vel. Euismod convallis condimentum facilisis tincidunt
           tristique. Varius at pretium vitae vestibulum. Turpis donec lacus
@@ -19,7 +19,7 @@ const PrintandPost = () => {
         <div className="border-2 border-solid mx-2">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <AiOutlinePrinter className="text-[25px] mr-5" />
-            <span className="headline7 lg:text-[16px] sm:text-[12px]">
+            <span className="headline7 text-[8px] lg:text-[16px] sm:text-[16px]">
               Print and Post
             </span>
           </button>

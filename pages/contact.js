@@ -36,7 +36,7 @@ const contact = () => {
 
       <div className="my-20">
         <form onSubmit={handleSubmit(onSubmit)} className="formclass ">
-          <div className="flex mb-5">
+          <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row mb-5">
             <div>
               <label className="headline7 ml-5">Full Name</label>
               <div className="contactinput w-[389px] border-2 mx-5 mt-5">
@@ -109,7 +109,7 @@ const contact = () => {
 
           {/* break */}
 
-          <div className="flex ">
+          <div className="flex flex-col xl:flex-row lg:flex-row md:flex-row mb-5">
             <div>
               <lable className="headline7 ml-5">Email Address</lable>
               <div className="contactinput w-[389px] border-2 mx-5 mt-5">
@@ -185,7 +185,7 @@ const contact = () => {
 
           <div>
             <label>Messages</label>
-            <div className="contactinput w-full border-2 mt-5 w-[823px] ">
+            <div className="contactinput w-[40px] lg:w-[823px]  md:w-[823px]  border-2 mt-5 ">
               <textarea
                 rows="8"
                 placeholder="Write your message here"

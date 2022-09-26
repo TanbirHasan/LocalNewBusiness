@@ -3,14 +3,14 @@ import Image from "next/image";
 const FindCompanies = () => {
   return (
     <div className="py-20">
-      <div className="lg:pl-20 flex justify-between sm:pl-10">
+      <div className="pl-10 lg:pl-20 md:pl-20 flex justify-between">
         <div>
-          <h2 className="w-[80%] lg:text-[40px]  sm:text-[24px] ">
+          <h2 className="text-[24px] w-[80%] lg:text-[40px] md:text-[40px] ">
             Find the names and addresses of newly formed companies in your area
             or industry.
           </h2>
         </div>
-        <div className="lg:block sm:hidden">
+        <div className="hidden lg:flex md:flex">
           <Image
             src="/assets/LocationLogo.png"
             width="74"
@@ -20,8 +20,8 @@ const FindCompanies = () => {
         </div>
       </div>
 
-      <div className="flex xl:flex-row lg:flex-row justify-between lg:px-20 mt-20 sm:flex flex-col sm:px-10">
-        <div className="card px-10 py-10 lg:mr-5 lg:mb-0 rounded-[10px] sm:mb-10">
+      <div className="flex px-10 xl:flex-row lg:flex-row justify-between lg:px-20 mt-20 sm:flex flex-col sm:px-10">
+        <div className="card mb-10 px-10 py-10 lg:mr-5 lg:mb-0 rounded-[10px] lg:mb-0 md:mb-0">
           <Image
             src="/assets/Smiley.png"
             width="24"
@@ -51,7 +51,7 @@ const FindCompanies = () => {
         </div>
       </div>
 
-      <div className="lg:px-20 mt-20 sm:px-10">
+      <div className="px-10 lg:px-20 mt-20">
         <div className="card px-10 py-10 rounded-[10px]">
           <Image
             src="/assets/File.png"
