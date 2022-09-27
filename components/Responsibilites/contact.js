@@ -5,7 +5,6 @@ import {
   TextareaAutosize,
   TextField,
 } from "@mui/material";
-import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 
 import Footer from "../components/Footer/Footer";
@@ -63,8 +62,8 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col px-5 py-10 justify-center items-center"
           >
-            <div className=" flex flex-col gap-5 items-center justify-between w-3/4 md:w-3/4">
-              <div className="grid grid-cols-2 gap-5 w-full">
+            <div className=" flex flex-col gap-5 items-center justify-between ">
+              <div className="grid grid-cols-2 gap-5">
                 <div>
                   <Controller
                     name="fullname"
@@ -184,26 +183,24 @@ const Contact = () => {
                     render={({ field }) => (
                       <>
                         <InputLabel className="headline7 text-[16px]">
-                          Subject
+                          Text
                         </InputLabel>
                         <Select
                           {...field}
                           type="select"
-                          className="rounded mt-2"
+                          className="bg-white rounded mt-2"
                           autoFocus={true}
-                          displayEmpty
-                          renderValue={(value) =>
-                            value !== "" ? value : "Select Subject"
-                          }
+                          value="Select Your Subject"
+                          placeholder="Select Subject"
                           error={!!errors.subject}
                           helperText={errors?.subject?.message}
                           variant="outlined"
                           required
                           fullWidth
                         >
-                          <MenuItem value={"CSE"}>CSE</MenuItem>
-                          <MenuItem value={"EEE"}>EEE</MenuItem>
-                          <MenuItem value={"ETE"}>ETE</MenuItem>
+                          <MenuItem value={10}>Ten</MenuItem>
+                          <MenuItem value={20}>Twenty</MenuItem>
+                          <MenuItem value={30}>Thirty</MenuItem>
                         </Select>
                       </>
                     )}

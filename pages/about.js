@@ -7,10 +7,11 @@ import ReserveData from "../components/ReserveData/ReserveData";
 import Responsibilities from "../components/Responsibilites/Responsibilities";
 
 const About = () => {
+  const colour = "transparent";
   return (
     <div>
       <div className="about">
-        <Navbar />
+        <Navbar colour={colour} />
         <div className="text-center z-10 pt-[100px] px-10">
           {" "}
           <h3 className="Tagline mb-5  lg:text-[20px] text-[#D16F32]">

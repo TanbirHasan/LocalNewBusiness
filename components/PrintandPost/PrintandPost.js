@@ -15,8 +15,8 @@ const PrintandPost = () => {
           tincidunt quis enim.
         </p>
       </div>
-      <div className="flex justify-center mt-10">
-        <div className="border-2 border-solid mx-2">
+      <div className="flex flex-col justify-center items-center lg:flex-row md:flex-row mt-10">
+        <div className="border-2 border-solid mx-2 mt-5 sm:w-2/4 sm:text-center">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <AiOutlinePrinter className="text-[25px] mr-5" />
             <span className="headline7 text-[8px] lg:text-[16px] sm:text-[16px]">
@@ -25,7 +25,7 @@ const PrintandPost = () => {
           </button>
         </div>
 
-        <div className="border-2 border-solid mx-2">
+        <div className="border-2 border-solid mx-2 mt-5 sm:w-2/4 sm:text-center">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <AiOutlineMail className="text-[25px] mr-5" />
             <span className="headline7 lg:text-[16px] sm:text-[12px]">
@@ -34,7 +34,7 @@ const PrintandPost = () => {
           </button>
         </div>
 
-        <div className="border-2 border-solid mx-2">
+        <div className="border-2 border-solid mx-2 mt-5 sm:w-2/4 sm:text-center">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <BiDownload className="text-[25px] mr-5" />
             <span className="headline7 lg:text-[16px] sm:text-[12px]">

@@ -13,7 +13,7 @@ const Banner = () => {
     reset();
   };
   return (
-    <div className="banner px-10 lg:h-screen lg:px-20 py-20 sm:px-10 h-auto">
+    <div className="banner px-10  lg:px-20 py-20 sm:px-10 h-auto">
       <div className="text-center mb-10">
         <h2 className="headline2 text-[24px] xl:text-[40px] lg:text-[40px] md:text-[40px]  text-white mb-10 xl:w-[890px] lg:w-[890px] mx-auto">
           We help you connect with new local businesses before the competition.
@@ -32,7 +32,7 @@ const Banner = () => {
       <div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="form mb-20 flex justify-evenly lg:flex-row text-center sm:flex flex-col items-center"
+          className="form mb-20 flex justify-evenly lg:flex-row md:flex-row text-center sm:flex flex-col items-center"
         >
           <div className="form-control w-full max-w-xs">
             <label className="headline6 text-white">Search By Postcode</label>
