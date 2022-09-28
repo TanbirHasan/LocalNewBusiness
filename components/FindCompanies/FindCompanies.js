@@ -56,7 +56,7 @@ const FindCompanies = () => {
         {data.map((data) => (
           <>
             <div
-              className={`card mb-10 px-10 py-10 lg:mr-5 rounded-[10px] lg:mb-0 md:mb-0 ${data.style}`}
+              className={`card mb-10 px-10 py-10 lg:mr-5 rounded-[10px] lg:mb-0 md:mb-0 lg:${data.style} md:${data.style}`}
               key={data.id}
             >
               <img src={data.image} width="24" height="24" alt="logo" />
