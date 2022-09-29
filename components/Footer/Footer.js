@@ -4,9 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer class="footer text-gray-600 body-font  bottom-0 w-full">
-      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="container px-10 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="xl:w-64 lg:w-64 md:w-64 flex-shrink-0 md:mx-0 md:text-left sm:mx-0 sm:w-full">
-          <a class="flex title-font font-medium xl:items-center md:justify-start justify-center text-gray-900 sm:justify-start">
+          <a class="flex title-font justify-start font-medium xl:items-center md:justify-start text-gray-900 sm:justify-start">
             <Image
               className="ml-3 text-xl"
               src="/assets/logo.png"

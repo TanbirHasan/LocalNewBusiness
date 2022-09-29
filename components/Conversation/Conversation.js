@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Conversation = () => {
   return (
-    <div className="xl:px-20 lg:px-20 py-20 sm:px-10">
-      <div className="flex flex-col justify-evenly mx-5 px-10 bg-[#9BCCE9]  py-20 rounded xl:flex-row lg:flex-row md:flex-row  lg:mx-0 md:mx-0 ">
+    <div className="xl:px-20 lg:px-20 py-20 px-10">
+      <div className="flex flex-col justify-evenly px-10 bg-[#9BCCE9]  py-20 rounded xl:flex-row lg:flex-row md:flex-row  lg:mx-0 md:mx-0 ">
         <div className="flex flex-col justify-center items-start">
           <h3 className="headline3 text-[20px] mb-5 lg:text-[36px] xl:text-[36px] md:text-[36px]">
             Get full conversion access with{" "}

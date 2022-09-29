@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 
 const Banner = () => {
@@ -24,10 +25,19 @@ const Banner = () => {
           crowd.
         </p>
       </div>
-      <div className="feature flex justify-evenly text-white mb-10 ">
-        <span className="headline7">Update Every Second</span>
-        <span className="headline7">30 Days Free Trial</span>
-        <span className="headline7">Unlimited Data</span>
+      <div className="feature flex flex-col justify-center items-center lg:flex-row md:flex-row text-white mb-10 ">
+        <div className="flex items-center lg:justify-center md:justify-center  w-2/3 mb-2">
+          <Image src="/assets/Tick.png" width="15" height="15" alt="" />
+          <span className="headline7 ml-4 ">Update Every Second</span>
+        </div>
+        <div className="flex items-center lg:justify-center md:justify-center  w-2/3 mb-2">
+          <Image src="/assets/Tick.png" width="15" height="15" alt="" />
+          <span className="headline7 ml-4">30 Days Free Trial</span>
+        </div>
+        <div className="flex items-center lg:justify-center md:justify-center  w-2/3">
+          <Image src="/assets/Tick.png" width="15" height="15" alt="" />
+          <span className="headline7 ml-4">Unlimited Data</span>
+        </div>
       </div>
       <div>
         <form

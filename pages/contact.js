@@ -39,7 +39,7 @@ const Contact = () => {
     <div>
       <div className="contact">
         <Navbar colour={colour} />
-        <div className="px-20">
+        <div className="px-10 lg:px-20 md:px-20">
           <div className="text-center z-10 pt-[100px]">
             <h3 className="Tagline mb-5 lg:text-[20px] text-[#D16F32]">
               CONTACT US
@@ -63,7 +63,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col px-5 py-10 justify-center items-center"
           >
-            <div className=" flex flex-col gap-5 items-center justify-between w-3/4 md:w-3/4">
+            <div className=" flex flex-col gap-5 items-center justify-between lg:w-3/4 md:w-3/4">
               <div className="grid grid-cols-2 gap-5 w-full">
                 <div>
                   <Controller
@@ -246,7 +246,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="headline8 bg-[#D16F32] text-white text-[14px] cursor-pointer my-7 bg-main px-3 py-2 w-full sm:w-96 md:w-96 rounded-md font-semibold"
+              className="headline8 bg-[#D16F32] text-white text-[14px] cursor-pointer my-7 bg-main px-3 py-2 w-2/4 sm:w-96 md:w-96 rounded-md font-semibold"
             >
               Send Message
             </button>

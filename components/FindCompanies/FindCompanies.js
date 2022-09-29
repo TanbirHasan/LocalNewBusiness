@@ -35,9 +35,9 @@ const FindCompanies = () => {
 
   return (
     <div className="py-20">
-      <div className="pl-10 lg:pl-20 md:pl-20 flex justify-between">
+      <div className="px-10 lg:pl-20 md:pl-20 flex justify-between">
         <div>
-          <h2 className="headline2 mb-5 text-[24px] w-[80%] lg:text-[40px] md:text-[40px] ">
+          <h2 className="headline2 mb-5 text-[24px]  lg:text-[40px] md:text-[40px] ">
             Find the names and addresses of newly formed companies in your area
             or industry.
           </h2>
