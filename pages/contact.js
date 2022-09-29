@@ -41,10 +41,10 @@ const Contact = () => {
         <Navbar colour={colour} />
         <div className="px-10 lg:px-20 md:px-20">
           <div className="text-center z-10 pt-[100px]">
-            <h3 className="Tagline mb-5 lg:text-[20px] text-[#D16F32]">
+            <h3 className="Tagline mb-5 lg:text-[20px] md:text-[20px] text-[#D16F32]">
               CONTACT US
             </h3>
-            <h2 className="headline3 lg:text-[36px] sm:text-[22px]">
+            <h2 className="headline3 lg:text-[36px] md:text-[36px] sm:text-[22px] text-[22px]">
               Be the first to access new companies contact
               <br /> details with new start data.
             </h2>
@@ -87,7 +87,7 @@ const Contact = () => {
                           type="text"
                           className="bg-white rounded mt-2"
                           autoFocus={true}
-                          placeholder="Full Name"
+                          placeholder="Input your full name"
                           error={!!errors.fullname}
                           helperText={errors?.fullname?.message}
                           variant="outlined"
@@ -121,7 +121,7 @@ const Contact = () => {
                           type="text"
                           className="bg-white rounded mt-2"
                           autoFocus={true}
-                          placeholder="Company Name"
+                          placeholder="Input your company name"
                           error={!!errors.companyname}
                           helperText={errors?.companyname?.message}
                           variant="outlined"
@@ -157,7 +157,7 @@ const Contact = () => {
                           type="email"
                           className="bg-white rounded mt-2"
                           autoFocus={true}
-                          placeholder="Email Address"
+                          placeholder="Input your email address"
                           error={!!errors.email}
                           helperText={errors?.email?.message}
                           variant="outlined"
@@ -193,7 +193,7 @@ const Contact = () => {
                           autoFocus={true}
                           displayEmpty
                           renderValue={(value) =>
-                            value !== "" ? value : "Select Subject"
+                            value !== "" ? value : "Select your subject"
                           }
                           error={!!errors.subject}
                           helperText={errors?.subject?.message}
@@ -225,7 +225,7 @@ const Contact = () => {
                   render={({ field }) => (
                     <>
                       <InputLabel className="headline7 text-[16px]">
-                        Message
+                        Messages
                       </InputLabel>
                       <TextareaAutosize
                         {...field}
@@ -246,7 +246,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="headline8 bg-[#D16F32] text-white text-[14px] cursor-pointer my-7 bg-main px-3 py-2 w-2/4 sm:w-96 md:w-96 rounded-md font-semibold"
+              className="headline6 bg-[#D16F32] text-white text-[14px] cursor-pointer my-7 px-3 py-2 w-2/4 sm:w-96 md:w-96 rounded-md font-semibold"
             >
               Send Message
             </button>

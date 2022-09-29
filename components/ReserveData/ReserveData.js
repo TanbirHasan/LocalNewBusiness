@@ -4,7 +4,7 @@ const ReserveData = () => {
   return (
     <div className="flex flex-col px-10 justify-center items-center my-20 xl:flex-row lg:flex-row lg:justify-evenly md:justify-evenly">
       <div className="w-full xl:w-1/4 lg:w-1/4">
-        <h2 className="reserveHeadlintext mb-5 text-[24px] text-center xl:text-[48px] lg:text-[48px] sm:text-[48px]">
+        <h2 className="reserveHeadlintext mb-5 text-[24px] text-center xl:text-[48px] lg:text-[48px] sm:text-[38px]">
           WE RESERVE MILLION DATA
         </h2>
       </div>

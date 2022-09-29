@@ -157,13 +157,24 @@ border-radius: 100%;
 }
 
 
-// Input field css
+
 
 
 
 .footer{
   background: linear-gradient(180deg, rgba(50, 148, 209, 0) 0%, rgba(50, 148, 209, 0.31) 100%);;
 }
+
+// slider custom css
+
+.jJoQOU {
+  padding-left: 10px;
+  grid-template-columns: repeat(1,100%)!important;
+
+}
+
+
+
 
 .header6 {
   // font-size: 40px;
@@ -187,7 +198,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
-  // font-size: 20px;
+  // font-size: 20px; md: 18px sm:16px
   line-height: 147%;
 }
 
@@ -203,8 +214,9 @@ border-radius: 100%;
 .headline7{
   font-family: 'Barlow';
   font-style: normal;
+
   font-weight: 400;
-  // font-size: 16px;
+  // font-size: 16px; md:12px
   line-height: 19px;
 
 }
@@ -214,7 +226,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 500;
-  // font-size: 20px;
+  // font-size: 20px; sm:16px
   line-height: 32px;
 }
 
@@ -224,7 +236,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 500;
-  // font-size: 36px;
+  // font-size: 36px; md:28px sm:20px
   line-height: 147%;
 }
 
@@ -232,7 +244,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 700;
-  // font-size: 40px;
+  // font-size: 40px; md:32px sm:24px
   line-height: 143.69%;
 }
 
@@ -240,7 +252,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
-  // font-size: 52px;
+  // font-size: 52px; md:36px sm:24px
   line-height: 143.69%;
 }
 
@@ -280,7 +292,7 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  //font-size: 18px; sm:14px
   line-height: 169%;
 }
 .headline8{
@@ -295,6 +307,6 @@ border-radius: 100%;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 24px;// sm:16px
   line-height: 32px;
 }
