@@ -3,7 +3,8 @@ import AboutUsSecond from "../components/AboutUsSecond/AboutUsSecond";
 import Conversation from "../components/Conversation/Conversation";
 import Footer from "../components/Footer/Footer";
 import Goal from "../components/Goal/Goal";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
+
 import ReserveData from "../components/ReserveData/ReserveData";
 import Responsibilities from "../components/Responsibilites/Responsibilities";
 

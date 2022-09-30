@@ -7,7 +7,8 @@ import FindCompanies from "../components/FindCompanies/FindCompanies";
 import Footer from "../components/Footer/Footer";
 import HomeAboutUs from "../components/HomeAboutUs/HomeAboutUs";
 import HowitWorks from "../components/HowitWorks/HowitWorks";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
+
 import PrintandPost from "../components/PrintandPost/PrintandPost";
 
 const Home = () => {

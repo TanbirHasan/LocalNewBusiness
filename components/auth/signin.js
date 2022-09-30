@@ -11,7 +11,10 @@ import AuthLayout from "./layout";
 
 // yup validation schema
 let schema = yup.object().shape({
-  email: yup.string().email("Enter a valid Email").required("Required"),
+  email: yup
+    .string()
+    .email("Enter a valid Email")
+    .required("No email provided"),
 
   password: yup
     .string()

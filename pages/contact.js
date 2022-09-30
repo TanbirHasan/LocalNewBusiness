@@ -2,8 +2,7 @@ import ContactForm from "../components/ContactForm/ContactForm";
 import ContactUs from "../components/ContactUs/ContactUs";
 
 import Footer from "../components/Footer/Footer";
-
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 const Contact = () => {
   const colour = "transparent";
