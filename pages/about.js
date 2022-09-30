@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs/AboutUs";
 import AboutUsSecond from "../components/AboutUsSecond/AboutUsSecond";
 import Conversation from "../components/Conversation/Conversation";
 import Footer from "../components/Footer/Footer";
@@ -12,20 +13,8 @@ const About = () => {
     <div>
       <div className="about lg:text-center md:text-center sm:text-center">
         <Navbar colour={colour} />
-        <div className=" z-10 pt-[100px] px-10">
-          {" "}
-          <h3 className="Tagline mb-5 lg:text-[20px] text-[#D16F32]">
-            ABOUT US
-          </h3>
-          <h2 className="headline3 text-[20px] xl:text-[36px]  lg:text-[36px] md:text-[28px] sm:text-[22px]">
-            Be the first to access new companies contact
-            <br /> details with new start data.
-          </h2>
-          <p className="headline6">
-            Be the first to access new companies contact details with New Start
-            Data.
-          </p>
-        </div>
+
+        <AboutUs />
       </div>
 
       <ReserveData />

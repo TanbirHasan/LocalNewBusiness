@@ -9,6 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import AuthLayout from "./layout";
 
+// yup validation schema
 let schema = yup.object().shape({
   email: yup.string().email("Enter a valid Email").required("Required"),
 
