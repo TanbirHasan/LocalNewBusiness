@@ -23,11 +23,11 @@ const About = () => {
       <Responsibilities />
       <Goal />
 
-      <div className="text-start py-10 px-10 xl:px-20  lg:px-20 md:px-20 md:px-10  lg:py-20 md:py-20 lg:text-center md:text-center">
-        <h3 className="headline3 text-[24px] mb-5 lg:text-[36px]  xl:text-[36px]  md:text-[36px] ">
+      <div className="text-start py-10 px-10 xl:px-20  lg:px-20 md:px-20   lg:py-20 md:py-20 lg:text-center md:text-center">
+        <h3 className="headline3 headline3Res  mb-5">
           Be the first to access new companies contact.
         </h3>
-        <p className="headline6">
+        <p className="headline6 headline6Res">
           Be the first to access new companies contact details with New Start
           Data. Be the first to access new companies contact details with New
           Start Data. Be the first to access new companies contact details with

@@ -12,7 +12,7 @@ const AboutUsSecond = () => {
           </h2>
         </div>
         <div className="w-full ">
-          <p className="headline6 text-[14px] lg:text-[18px] md:text-[18px]">
+          <p className="headline6 headline6Res">
             Be the first to access new companies contact details with New Start
             Data. Be the first to access new companies contact details with New
             Start Data. Be the first to access new companies contact details

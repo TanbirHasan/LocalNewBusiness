@@ -5,10 +5,10 @@ const PrintandPost = () => {
   return (
     <div className="lg:px-20 px-10 md:px-20">
       <div className="text-center px-10">
-        <h2 className="headline3 text-[20px] lg:text-[36px] md:text-[36px] sm:text-[28px] mb-5 sm:text-[20px]">
+        <h2 className="headline3 headline3Res mb-5 ">
           Lorem ipsum dolor sit amet.
         </h2>
-        <p className="headline6 text-[14px] lg:text-[18px] md:text-[18px] sm:text-[18px]">
+        <p className="headline6 headline6Res">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique
           odio nam vel. Euismod convallis condimentum facilisis tincidunt
           tristique. Varius at pretium vitae vestibulum. Turpis donec lacus

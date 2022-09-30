@@ -36,6 +36,9 @@ body {
     @apply flex justify-between items-center py-5 px-20 bg-blue-100
   }
 
+
+  // Authentication form class 
+
   .authform{
     @apply grid grid-cols-1 sm:grid-cols-6 h-screen
   }
@@ -56,6 +59,67 @@ body {
   }
   .formbottomlink{
     @apply text-blue-600 my-5 text-[color:var(--form-button-color)] cursor-pointer
+  }
+
+
+
+
+  // How it works section custom class------------
+  .howitworksOption{
+    @apply px-5 mx-auto lg:mx-0 md:mx-0 sm:mx-0
+  }
+
+  .howitworkslogo{
+    @apply logodesign w-[28px] h-[28px] bg-[red] px-[5px] py-[5px] mb-5
+   
+  }
+
+
+
+
+
+// Banner custom class----------
+
+  //Banner feature - update every second - 30 Days trial - Unlimited data--------------
+ .featureclass{
+  @apply flex justify-center items-center lg:justify-center md:justify-center sm:justify-center  w-2/3
+
+}
+
+  .bannerlebleclass{
+    @apply text-white text-[14px] lg:text-[16px] md:text-[16px] sm:text-[16px]
+  }
+  .bannerinputclass{
+    @apply w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0 xl:w-full lg:w-4/5 md:w-2/3 sm:w-2/3
+  }
+  .bannersubmitbutton{
+    @apply w-full py-5 rounded-lg headline6 my-5 text-center bg-[color:var(--primary1-color)] text-white cursor-pointer xl:w-full lg:w-4/5 md:w-2/3 sm:w-2/3
+  }
+
+  // responsive font size class
+
+
+  .taglineRes{
+    @apply text-[16px] lg:text-[20px] md:text-[20px] sm:text-[20px]
+  }
+  .headline1Res{
+    @apply text-[24px] lg:text-[52px] md:text-[52px] 
+  }
+  .headline2Res{
+    @apply text-[24px] xl:text-[40px] lg:text-[40px] md:text-[30px]
+  }
+  .headline3Res{
+    @apply text-[20px] lg:text-[36px] md:text-[32px] 
+  }
+  .headline4Res{
+    @apply text-[17px] lg:text-[24px] md:text-[24px] 
+   
+  }
+  .headline5Res{
+    @apply xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]
+  }
+  .headline6Res{
+    @apply text-[14px] lg:text-[18px] md:text-[18px] sm:text-[18px]
   }
 
 
@@ -81,7 +145,7 @@ body {
   
 }
 
-/* component custom style */
+/* Component Background Style class */
 .banner{
   background-image: linear-gradient(180deg, rgba(25, 38, 63, 0.87) -43.82%, #3294D1 100%), url("/assets/Rectangle.png");
   opacity: 0.97;
