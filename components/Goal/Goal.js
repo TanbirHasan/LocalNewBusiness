@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Goal = () => {
   return (
-    <div className="px-10">
+    <div className="px-10 lg:px-20px md:px-20">
       <div className="flex lg:flex-row  md:flex sm:flex flex-col">
         <div class="vision p-6 my-5 w-auto h-auto  bg-white rounded-xl shadow-lg  items-center  lg:mx-8 md:mx-2 sm:mx-0 lg:my-0">
           <div class="shrink-0 text-center">

@@ -1,12 +1,12 @@
 const AboutUsSecond = () => {
   return (
-    <div className="px-10 py-10 xl:px-20 lg:px-20 lg:py-20 md:py-20 ">
+    <div className="px-10 py-10 xl:px-20 lg:px-20 lg:py-20 md:py-20 md:px-20">
       <h3 className="Tagline mb-5 text-[20px] text-[#D16F32] text-start xl:text-start md:text-start lg:text-start ">
         ABOUT US
       </h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4">
         <div className="w-full">
-          <h2 className="headline1 mb-5 lg:pr-5 text-[24px] lg:text-[52px] xl:text-[52px] md:text-[36px]  sm:mb-5 xl:text-start lg:text-start">
+          <h2 className="headline1 mb-5 lg:pr-5 md:pr-5 text-[24px] lg:text-[52px] xl:text-[52px] md:text-[36px]  sm:mb-5 xl:text-start lg:text-start">
             Be the first to access new companies contact details with new start
             data.
           </h2>

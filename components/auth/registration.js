@@ -46,14 +46,6 @@ const Registration = () => {
           <Controller
             name="email"
             control={control}
-            rules={{
-              required: true,
-              validate: (value) => {
-                if (value === "") {
-                  return "Please provide input name";
-                }
-              },
-            }}
             render={({ field }) => (
               <TextField
                 {...field}
@@ -76,14 +68,6 @@ const Registration = () => {
             <Controller
               name="firstname"
               control={control}
-              rules={{
-                required: true,
-                validate: (value) => {
-                  if (value === "") {
-                    return "Please provide input name";
-                  }
-                },
-              }}
               render={({ field }) => (
                 <TextField
                   {...field}

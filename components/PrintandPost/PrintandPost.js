@@ -3,7 +3,7 @@ import { BiDownload } from "react-icons/bi";
 
 const PrintandPost = () => {
   return (
-    <div className="lg:px-20 sm:px-10">
+    <div className="lg:px-20 px-10 md:px-20">
       <div className="text-center px-10">
         <h2 className="headline3 text-[20px] lg:text-[36px] md:text-[36px] sm:text-[28px] mb-5 sm:text-[20px]">
           Lorem ipsum dolor sit amet.

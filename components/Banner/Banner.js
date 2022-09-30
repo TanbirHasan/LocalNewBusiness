@@ -25,16 +25,16 @@ const Banner = () => {
           crowd.
         </p>
       </div>
-      <div className="feature flex flex-col justify-center items-center lg:flex-row md:flex-row text-white mb-10 ">
-        <div className="flex items-center lg:justify-center md:justify-center  w-2/3 mb-2">
+      <div className="feature flex flex-col justify-center items-center lg:flex-row md:flex-row sm:flex-row text-white mb-10 ">
+        <div className="flex justify-center items-center lg:justify-center md:justify-center sm:justify-center  w-2/3 mb-2">
           <Image src="/assets/Tick.png" width="15" height="15" alt="" />
           <span className="headline7 ml-4 ">Update Every Second</span>
         </div>
-        <div className="flex items-center lg:justify-center md:justify-center  w-2/3 mb-2">
+        <div className="flex justify-center items-center lg:justify-center md:justify-center sm:justify-center  w-2/3 mb-2">
           <Image src="/assets/Tick.png" width="15" height="15" alt="" />
           <span className="headline7 ml-4">30 Days Free Trial</span>
         </div>
-        <div className="flex items-center lg:justify-center md:justify-center  w-2/3">
+        <div className="flex justify-center items-center lg:justify-center md:justify-center sm:justify-center  w-2/3">
           <Image src="/assets/Tick.png" width="15" height="15" alt="" />
           <span className="headline7 ml-4">Unlimited Data</span>
         </div>

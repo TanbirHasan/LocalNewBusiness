@@ -3,7 +3,38 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
+import * as yup from "yup";
+
+import { yupResolver } from "@hookform/resolvers/yup";
+
 import AuthLayout from "./layout";
+
+let schema = yup.object().shape({
+  email: yup.string().email("Enter a valid Email").required("Required"),
+
+  password: yup
+    .string()
+    .required("No password provided.")
+    .min(8, "Password is too short - should be 8 chars minimum.")
+    .matches(/[a-zA-Z]/, "Password can only contain Latin letters."),
+});
+
+// check validity
+schema
+  .isValid({
+    email: "eric.cartman@southpark.com",
+  })
+  .then((valid) => {
+    console.log(valid); // true
+  });
+schema
+  .isValid({
+    email: "not.a.valid.email",
+  })
+  .then((valid) => {
+    console.log(valid); // false
+  });
+
 const Signin = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -15,13 +46,15 @@ const Signin = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    //resolver: yupResolver(schema),
+    resolver: yupResolver(schema),
   });
 
   const { isValid, dirtyFields, errors } = formState;
 
   const onSubmit = (values) => {
     console.log(values);
+
+    reset();
   };
 
   return (
@@ -38,14 +71,6 @@ const Signin = () => {
           <Controller
             name="email"
             control={control}
-            rules={{
-              required: true,
-              validate: (value) => {
-                if (value === "") {
-                  return "Please provide input name";
-                }
-              },
-            }}
             render={({ field }) => (
               <TextField
                 {...field}
@@ -54,9 +79,9 @@ const Signin = () => {
                 className="bg-white"
                 autoFocus={true}
                 placeholder="Email"
-                error={!!errors.email}
                 helperText={errors?.email?.message}
                 variant="outlined"
+                error={!!errors?.email}
                 required
                 fullWidth
               />
@@ -74,7 +99,7 @@ const Signin = () => {
                 }
               },
             }}
-            render={({ field }) => (
+            render={({ field, formState }) => (
               <TextField
                 {...field}
                 label="Password"

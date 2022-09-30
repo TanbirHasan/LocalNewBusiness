@@ -2,7 +2,7 @@ import React from "react";
 
 const Responsibilities = () => {
   return (
-    <div className="px-10 text-start py-10 lg:px-20 md:px-10 lg:py-20 md:py-20 lg:text-center md:text-center">
+    <div className="px-10 text-start py-10 lg:px-20 md:px-20 lg:py-20 md:py-20 lg:text-center md:text-center">
       <h3 className="Tagline text-[20px] mb-5 text-[#D16F32]">
         OUR RESPONSIBILITIES
       </h3>

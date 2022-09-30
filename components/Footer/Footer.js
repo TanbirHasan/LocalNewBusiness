@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer class="footer text-gray-600 body-font  bottom-0 w-full">
-      <div class="container px-10 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="container px-10 py-24 lg:px-20 md:px-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="xl:w-64 lg:w-64 md:w-64 flex-shrink-0 md:mx-0 md:text-left sm:mx-0 sm:w-full">
           <a class="flex title-font justify-start font-medium xl:items-center md:justify-start text-gray-900 sm:justify-start">
             <Image
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="py-10 text-center">
+      <div class="py-10 px-10 text-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </footer>
