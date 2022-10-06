@@ -9,7 +9,7 @@ const Conversation = () => {
             Get full conversion access with{" "}
           </h3>
           <div className="flex items-center mb-5">
-            <Image src="/assets/logo.png" width="100" height="50" alt="" />
+            <img src="/assets/logo.png" width="100" height="" alt="" />
             <span className="headline6 ml-5 bg-[#3294D1] px-5 rounded text-white">
               Pro
             </span>

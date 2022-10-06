@@ -90,10 +90,10 @@ body {
     @apply text-white text-[14px] lg:text-[16px] md:text-[16px] sm:text-[16px]
   }
   .bannerinputclass{
-    @apply w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0 xl:w-full lg:w-4/5 md:w-2/3 sm:w-2/3
+    @apply w-full py-5 rounded-lg headline6 my-5 text-center focus:outline-0 xl:w-full lg:w-4/5 md:w-2/3 sm:w-full
   }
   .bannersubmitbutton{
-    @apply w-full py-5 rounded-lg headline6 my-5 text-center bg-[color:var(--primary1-color)] text-white cursor-pointer xl:w-full lg:w-4/5 md:w-2/3 sm:w-2/3
+    @apply w-full py-5 rounded-lg headline6 my-5 text-center bg-[color:var(--primary1-color)] text-white cursor-pointer xl:w-full lg:w-4/5 md:w-2/3 sm:w-full
   }
 
   // responsive font size class
@@ -103,7 +103,7 @@ body {
     @apply text-[16px] lg:text-[20px] md:text-[20px] sm:text-[20px]
   }
   .headline1Res{
-    @apply text-[24px] lg:text-[52px] md:text-[52px] 
+    @apply text-[24px] lg:text-[48px] md:text-[48px] 
   }
   .headline2Res{
     @apply text-[24px] xl:text-[40px] lg:text-[40px] md:text-[30px]

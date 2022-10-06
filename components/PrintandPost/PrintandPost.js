@@ -16,28 +16,28 @@ const PrintandPost = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center items-center lg:flex-row md:flex-row mt-10">
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-2/4 text-center">
-          <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
+          <button class=" bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <AiOutlinePrinter className="text-[25px] mr-5" />
-            <span className="headline7 text-[8px] lg:text-[16px] sm:text-[16px]">
+            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
               Print and Post
             </span>
           </button>
         </div>
 
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-2/4 text-center">
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <AiOutlineMail className="text-[25px] mr-5" />
-            <span className="headline7 lg:text-[16px] sm:text-[12px]">
+            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
               Email
             </span>
           </button>
         </div>
 
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-2/4 text-center">
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
           <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
             <BiDownload className="text-[25px] mr-5" />
-            <span className="headline7 lg:text-[16px] sm:text-[12px]">
+            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
               Download
             </span>
           </button>

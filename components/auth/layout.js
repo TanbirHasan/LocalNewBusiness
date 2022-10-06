@@ -1,13 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AuthLayout = ({ children }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-6 h-screen">
       <div className="left-div col-span-1  md:col-span-2 hidden md:block">
         <div className="flex flex-col items-start justify-between h-full">
-          <div className="p-10 lg:p-16">
-            <Image src="/assets/logo.png" width="120" height="50" alt="logo" />
+          <div className="p-10 lg:p-16 cursor-pointer">
+            <Link href="/home">
+              <Image
+                src="/assets/logo.png"
+                width="120"
+                height="50"
+                alt="logo"
+              />
+            </Link>
           </div>
           <div>
             <div className="headline2 text-[20px] lg:text-[32px] md:text-[32px] text-white px-10 lg:px-16">

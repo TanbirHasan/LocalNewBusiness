@@ -8,36 +8,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import AuthLayout from "./layout";
-
-// yup validation schema
-let schema = yup.object().shape({
-  email: yup
-    .string()
-    .email("Enter a valid Email")
-    .required("No email provided"),
-
-  password: yup
-    .string()
-    .required("No password provided.")
-    .min(8, "Password is too short - should be 8 chars minimum.")
-    .matches(/[a-zA-Z]/, "Password can only contain Latin letters."),
-});
-
-// check validity
-schema
-  .isValid({
-    email: "eric.cartman@southpark.com",
-  })
-  .then((valid) => {
-    console.log(valid); // true
-  });
-schema
-  .isValid({
-    email: "not.a.valid.email",
-  })
-  .then((valid) => {
-    console.log(valid); // false
-  });
+import { loginSchema } from "./utils/helper";
 
 const Signin = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -50,7 +21,7 @@ const Signin = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    resolver: yupResolver(schema),
+    resolver: yupResolver(loginSchema),
   });
 
   const { isValid, dirtyFields, errors } = formState;
