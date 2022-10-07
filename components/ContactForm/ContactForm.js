@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 
 import { Controller, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { contactSchema } from "../auth/utils/helper";
 
 const ContactForm = () => {
   const defaultValues = {
@@ -21,7 +23,7 @@ const ContactForm = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    //resolver: yupResolver(schema),
+    resolver: yupResolver(contactSchema),
   });
 
   const { isValid, dirtyFields, errors } = formState;

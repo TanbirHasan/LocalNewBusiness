@@ -3,7 +3,10 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import AuthLayout from "./layout";
+import { regiSchema } from "./utils/helper";
+
 const Registration = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -21,7 +24,7 @@ const Registration = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    //resolver: yupResolver(schema),
+    resolver: yupResolver(regiSchema),
   });
 
   const { isValid, dirtyFields, errors } = formState;
@@ -147,7 +150,7 @@ const Registration = () => {
           {/* company website */}
 
           <Controller
-            name="compnaywebsite"
+            name="companywebsite"
             control={control}
             rules={{
               required: true,
@@ -165,8 +168,8 @@ const Registration = () => {
                 className="bg-white rounded"
                 autoFocus={true}
                 placeholder="Company Website"
-                error={!!errors.compnaywebsite}
-                helperText={errors?.compnaywebsite?.message}
+                error={!!errors.companywebsite}
+                helperText={errors?.companywebsite?.message}
                 variant="outlined"
                 required
                 fullWidth
@@ -209,14 +212,6 @@ const Registration = () => {
           <Controller
             name="address"
             control={control}
-            rules={{
-              required: true,
-              validate: (value) => {
-                if (value === "") {
-                  return "Please provide input name";
-                }
-              },
-            }}
             render={({ field }) => (
               <TextField
                 {...field}
@@ -225,7 +220,7 @@ const Registration = () => {
                 className="bg-white rounded"
                 autoFocus={true}
                 placeholder="Address"
-                error={!errors.address}
+                error={!!errors.address}
                 helperText={errors?.address?.message}
                 variant="outlined"
                 required

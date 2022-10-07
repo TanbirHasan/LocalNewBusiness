@@ -4,6 +4,8 @@ import { IconButton, InputAdornment, TextField } from "@mui/material";
 import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 import AuthLayout from "./layout";
+import { loginSchema } from "./utils/helper";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 const ForgotPassword = () => {
   const defaultValues = {
@@ -13,7 +15,7 @@ const ForgotPassword = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    //resolver: yupResolver(schema),
+    resolver: yupResolver(loginSchema),
   });
 
   const { isValid, dirtyFields, errors } = formState;
