@@ -222,6 +222,14 @@ border-radius: 100%;
 
 
 
+.Searchbar{
+ width: 100%;
+
+  height: 24px!important;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  padding-right: 42px!important;
+}
 
 
 
@@ -234,6 +242,15 @@ border-radius: 100%;
 .jJoQOU {
   padding-left: 10px;
   grid-template-columns: repeat(1,100%)!important;
+
+}
+
+
+
+// stepper custom css
+
+.MuiStep-root MuiStep-horizontal py-5 border-solid border-2 w-full  css-1bw0nnu-MuiStep-root{
+  flex-direction: column;
 
 }
 

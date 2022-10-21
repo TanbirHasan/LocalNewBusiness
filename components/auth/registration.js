@@ -31,6 +31,8 @@ const Registration = () => {
 
   const onSubmit = (values) => {
     console.log(values);
+
+    reset();
   };
 
   return (
@@ -134,7 +136,7 @@ const Registration = () => {
               <TextField
                 {...field}
                 label="Phone Number"
-                type="text"
+                type="tel"
                 className="bg-white rounded"
                 autoFocus={true}
                 placeholder="Phone Number"

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 
-const Banner = () => {
+const Banner = (props) => {
+  const { onSubmit, isShown, setIsShown } = props;
   const {
     register,
     reset,
@@ -9,10 +10,6 @@ const Banner = () => {
     handleSubmit,
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
-  };
   return (
     <div className="banner px-10 py-10 lg:px-20 lg:py-20 md:py-20 sm:px-10 h-auto">
       <div className="text-center mb-10">
@@ -53,14 +50,14 @@ const Banner = () => {
               placeholder="Postcode"
               className="bannerinputclass"
               {...register("postcode", {
-                required: {
-                  value: true,
-                  message: "Postcode is required",
-                },
-                pattern: {
-                  value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
-                  message: "Provide a valid Postcode", // JS only: <p>error message</p> TS only support string
-                },
+                // required: {
+                //   value: true,
+                //   message: "Postcode is required",
+                // },
+                // pattern: {
+                //   value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
+                //   message: "Provide a valid Postcode", // JS only: <p>error message</p> TS only support string
+                // },
               })}
             />
             <label className="label">
@@ -88,14 +85,14 @@ const Banner = () => {
               placeholder="SIC Code"
               className="bannerinputclass"
               {...register("sic", {
-                required: {
-                  value: true,
-                  message: "SIC Code is required",
-                },
-                pattern: {
-                  value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
-                  message: "Provide a valid SIC Code", // JS only: <p>error message</p> TS only support string
-                },
+                // required: {
+                //   value: true,
+                //   message: "SIC Code is required",
+                // },
+                // pattern: {
+                //   value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
+                //   message: "Provide a valid SIC Code", // JS only: <p>error message</p> TS only support string
+                // },
               })}
             />
             <label className="label">

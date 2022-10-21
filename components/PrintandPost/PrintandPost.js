@@ -1,10 +1,12 @@
 import { AiOutlinePrinter, AiOutlineMail } from "react-icons/ai";
 import { BiDownload } from "react-icons/bi";
 
-const PrintandPost = () => {
+const PrintandPost = (props) => {
+  const { ondatasubmit, isShown, setIsShown } = props;
+
   return (
-    <div className="lg:px-20 px-10 md:px-20">
-      <div className="text-center px-10">
+    <div className="">
+      <div className="text-center lg:px-20 px-5 md:px-20">
         <h2 className="headline3 headline3Res mb-5 ">
           Lorem ipsum dolor sit amet.
         </h2>
@@ -15,29 +17,35 @@ const PrintandPost = () => {
           tincidunt quis enim.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center lg:flex-row md:flex-row mt-10">
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
-          <button class=" bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
-            <AiOutlinePrinter className="text-[25px] mr-5" />
-            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
+      <div className="flex flex-col justify-center items-center lg:flex-row md:flex-row mt-10 max-w-full px-10 lg:px-0 md:px-0">
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 sm:w-2/4 text-center hover:border-amber-600 hover:text-amber-600">
+          <button
+            class=" bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 lg:py-5 px-4 rounded inline-flex items-center "
+            onClick={() => ondatasubmit("printandpost")}
+          >
+            <AiOutlinePrinter className="text-[25px] mr-5 " />
+            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px] ">
               Print and Post
             </span>
           </button>
         </div>
 
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
-          <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
-            <AiOutlineMail className="text-[25px] mr-5" />
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 sm:w-2/4 text-center hover:border-amber-600 hover:text-amber-600">
+          <button
+            class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 lg:py-5 px-4 rounded inline-flex items-center "
+            onClick={() => ondatasubmit("email")}
+          >
+            <AiOutlineMail className="text-[25px] mr-5 " />
             <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
               Email
             </span>
           </button>
         </div>
 
-        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 text-center">
-          <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
-            <BiDownload className="text-[25px] mr-5" />
-            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px]">
+        <div className="border-2 border-solid lg:mx-2 md:mx-2 mt-5 w-full lg:w-1/4 md:w-2/4 sm:w-2/4 text-center hover:border-amber-600 hover:text-amber-600">
+          <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 lg:py-5 px-4 rounded inline-flex items-center ">
+            <BiDownload className="text-[25px] mr-5 " />
+            <span className="headline7 text-[14px] lg:text-[16px] sm:text-[14px] ">
               Download
             </span>
           </button>

@@ -3,7 +3,7 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
-import * as yup from "yup";
+
 
 import { yupResolver } from "@hookform/resolvers/yup";
 

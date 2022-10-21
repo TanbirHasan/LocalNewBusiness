@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 import AuthLayout from "./layout";
 import { TextField } from "@mui/material";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { resetpassschema } from "./utils/helper";
 
 const ResetPassword = () => {
   const defaultValues = {
@@ -13,7 +15,7 @@ const ResetPassword = () => {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: "onChange",
     defaultValues,
-    //resolver: yupResolver(schema),
+    resolver: yupResolver(resetpassschema),
   });
 
   const { isValid, dirtyFields, errors } = formState;
